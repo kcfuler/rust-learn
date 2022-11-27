@@ -8,18 +8,36 @@ fn main() {
 
 fn add_n(v: Vec<i32>, n: i32) -> Vec<i32> {
     let mut retv = Vec::new();
-    for i of v.iter(){
+    for i in v.iter() {
         retv.push(i + n);
     }
     retv
 }
 
 fn add_n_inplace(v: &mut Vec<i32>, n: i32) {
-    unimplemented!()
+    for i in 0..v.len() {
+        v[i] = v[i] + n;
+    }
 }
 
 fn dedup(v: &mut Vec<i32>) {
-    unimplemented!()
+    let mut set = HashSet::new();
+    let mut v_temp = Vec::new();
+
+    for i in 0..v.len() {
+        if set.contains(&v[i])
+        // 这里传引用过去
+        {
+            continue;
+        } else {
+            set.insert(v[i]);
+            v_temp.push(v[i]);
+        }
+    }
+    v.clear();
+    for i in 0..v_temp.len() {
+        v.push(v_temp[i]);
+    }
 }
 
 #[cfg(test)]
