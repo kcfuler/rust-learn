@@ -1,6 +1,23 @@
 use std::error::Error;
 use std::fs;
 
+/*
+1. 遍历迭代 contents 的每一行
+2. 检查该行内容是否包含我们的目标字符串
+3. 若包含，则放入返回值列表中，否则忽略
+4. 返回匹配到的返回值列表
+*/
+pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
+    let mut results = Vec::new();
+    for line in contents.lines() {
+        if line.contains(query) {
+            results.push(line);
+        }
+    }
+
+    results
+}
+
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     let contents = fs::read_to_string(config.file_path)?;
 
@@ -19,7 +36,7 @@ pub struct Config {
 // 使用面向对象的方式编程，让数据结构更清晰
 impl Config {
     // 使用 Result 的方式来处理
-    pub fn build(args: &[String]) -> Result<Config,&'static str>{
+    pub fn build(args: &[String]) -> Result<Config, &'static str> {
         if args.len() < 3 {
             return Err("not enough arguments");
         }
@@ -27,7 +44,7 @@ impl Config {
         let query = args[1].clone();
         let file_path = args[2].clone();
 
-        Ok(Config{ query, file_path })
+        Ok(Config { query, file_path })
     }
 }
 
@@ -46,21 +63,4 @@ safe, fast, productive.
 
         assert_eq!(vec!["safe, fast, productive."], search(query, contents));
     }
-}
-
-/*
-1. 遍历迭代 contents 的每一行
-2. 检查该行内容是否包含我们的目标字符串
-3. 若包含，则放入返回值列表中，否则忽略
-4. 返回匹配到的返回值列表
-*/
-pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
-    let mut results = Vec::new();
-    for line in contents.lines() {
-        if line.contains(query) {
-            results.push(line);
-        }
-    }
-
-    results
 }
