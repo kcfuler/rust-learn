@@ -7,11 +7,13 @@
       <sourceFolder url="file://$MODULE_DIR$/learn-oo/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/algorithm/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hello-world/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/server-demo/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/learn-concurrent/target" />
       <excludeFolder url="file://$MODULE_DIR$/minigrep/target" />
       <excludeFolder url="file://$MODULE_DIR$/learn-oo/target" />
       <excludeFolder url="file://$MODULE_DIR$/algorithm/target" />
       <excludeFolder url="file://$MODULE_DIR$/hello-world/target" />
+      <excludeFolder url="file://$MODULE_DIR$/server-demo/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
