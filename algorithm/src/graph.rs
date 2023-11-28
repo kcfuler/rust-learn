@@ -76,6 +76,7 @@ pub mod find_province {
 }
 
 pub mod eternal_safe_node {
+    use std::collections::VecDeque;
 
     pub struct Solution;
     #[derive(Clone, Copy)]
@@ -85,27 +86,60 @@ pub mod eternal_safe_node {
         Finish(bool),
     }
 
-    impl Solution {
-        pub fn eventual_safe_nodes(graph: Vec<Vec<i32>>) -> Vec<i32> {
-            let n = graph.len();
-            let mut states: Vec<State> = vec![State::Ready; n];
+    pub fn eventual_safe_nodes(graph: Vec<Vec<i32>>) -> Vec<i32> {
+        let n = graph.len();
+        let mut states: Vec<State> = vec![State::Ready; n];
 
-            fn dfs(g: &Vec<Vec<i32>>, states: &mut Vec<State>, cur: usize) -> bool {
-                match states[cur] {
-                    State::Started => false,
-                    State::Finish(result) => result,
-                    State::Ready => {
-                        states[cur] = State::Started;
-                        let result = g[cur].iter().all(|&son| dfs(g, states, son as usize));
-                        states[cur] = State::Finish(result);
-                        result
-                    }
+        fn dfs(g: &Vec<Vec<i32>>, states: &mut Vec<State>, cur: usize) -> bool {
+            match states[cur] {
+                State::Started => false,
+                State::Finish(result) => result,
+                State::Ready => {
+                    states[cur] = State::Started;
+                    let result = g[cur].iter().all(|&son| dfs(g, states, son as usize));
+                    states[cur] = State::Finish(result);
+                    result
+                }
+            }
+        }
+
+        (0..n as i32)
+            .filter(|&i| dfs(&graph, &mut states, i as usize))
+            .collect()
+    }
+
+    // use top_sort to resolve
+    pub fn top_sort(graph: Vec<Vec<i32>>) -> Vec<i32> {
+        let n = graph.len();
+        let mut g = vec![vec![]; n]; // incoming node
+        let mut d = vec![0; n]; // out degree
+        let mut queue = vec![]; // safe nodes
+
+        for (i, v) in graph.into_iter().enumerate() {
+            d[i] = v.len(); // caculate out degree
+            if d[i] == 0 {
+                queue.push(i); // get safe nodes
+            }
+
+            // make incoming graph
+            for x in v.into_iter().map(|x| x as usize) {
+                g[x].push(i);
+            }
+        }
+
+        let mut idx = 0;
+        while idx < queue.len() {
+            for &y in &g[queue[idx]] {
+                d[y] -= 1;
+                if d[y] == 0 {
+                    queue.push(y);
                 }
             }
 
-            (0..n as i32)
-                .filter(|&i| dfs(&graph, &mut states, i as usize))
-                .collect()
+            idx += 1;
         }
+
+        queue.sort();
+        queue.into_iter().map(|x| x as i32).collect::<Vec<_>>()
     }
 }
