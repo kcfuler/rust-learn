@@ -8,12 +8,14 @@
       <sourceFolder url="file://$MODULE_DIR$/Rust-book/learn-oo/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Rust-book/minigrep/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Rust-book/server-demo/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chen_tian_rust_first_class/base/scrape_url/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/algorithm/target" />
       <excludeFolder url="file://$MODULE_DIR$/Rust-book/hello-world/target" />
       <excludeFolder url="file://$MODULE_DIR$/Rust-book/learn-concurrent/target" />
       <excludeFolder url="file://$MODULE_DIR$/Rust-book/learn-oo/target" />
       <excludeFolder url="file://$MODULE_DIR$/Rust-book/minigrep/target" />
       <excludeFolder url="file://$MODULE_DIR$/Rust-book/server-demo/target" />
+      <excludeFolder url="file://$MODULE_DIR$/chen_tian_rust_first_class/base/scrape_url/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

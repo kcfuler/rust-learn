@@ -116,7 +116,7 @@ pub mod eternal_safe_node {
         let mut queue = vec![]; // safe nodes
 
         for (i, v) in graph.into_iter().enumerate() {
-            d[i] = v.len(); // caculate out degree
+            d[i] = v.len(); // calculate out degree
             if d[i] == 0 {
                 queue.push(i); // get safe nodes
             }
