@@ -7,10 +7,15 @@
     <cargoProject FILE="$PROJECT_DIR$/algorithm/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/chen_tian_rust_first_class/base/scrape_url/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/chen_tian_rust_first_class/base/httpie/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/chen_tian_rust_first_class/base/test-alloc/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8fc670c-d093-480b-8243-1710186f5a53" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/chen_tian_rust_first_class/base/test-alloc/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chen_tian_rust_first_class/base/test-alloc/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chen_tian_rust_first_class/base/test-alloc/src/main.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chen_tian_rust_first_class/cocurrent/atomatic.rs" beforeDir="false" afterPath="$PROJECT_DIR$/chen_tian_rust_first_class/cocurrent/atomatic.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +32,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="yg4uh34r" />
@@ -45,36 +53,61 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Cargo.Run learn-concurrent.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run minigrep.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run scrape_url.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run server-demo.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/repository/不洗碗/teaching-congress-web&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/algorithm-practice/最长前缀.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/chen_tian_rust_first_class/cocurrent/atomatic.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/hello-world/Cargo.toml&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Cargo.Run learn-concurrent.executor": "Run",
+    "Cargo.Run minigrep.executor": "Run",
+    "Cargo.Run scrape_url.executor": "Run",
+    "Cargo.Run server-demo.executor": "Run",
+    "Cargo.Run test-alloc.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/repository/不洗碗/teaching-congress-web",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/algorithm-practice/最长前缀.rs": "true",
+    "org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/chen_tian_rust_first_class/cocurrent/atomatic.rs": "true",
+    "org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/hello-world/Cargo.toml": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\repository\learn\rust-learn\Rust-book" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Run test-alloc" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package test-alloc --bin test-alloc" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/chen_tian_rust_first_class/base/test-alloc" />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo.Run test-alloc" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
@@ -131,7 +164,18 @@
       <workItem from="1701878038879" duration="1623000" />
       <workItem from="1701880368960" duration="604000" />
       <workItem from="1702026604584" duration="48000" />
+      <workItem from="1702026665089" duration="1584000" />
+      <workItem from="1702100080890" duration="752000" />
     </task>
+    <task id="LOCAL-00001" summary="Changes">
+      <option name="closed" value="true" />
+      <created>1702026693953</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702026693953</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +183,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
