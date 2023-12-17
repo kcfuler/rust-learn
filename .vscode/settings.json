@@ -1,5 +1,10 @@
 {
   "cSpell.words": [
     "minigrep"
-  ]
+  ],
+  "rust-analyzer.linkedProjects": [
+    ".\\algorithm\\Cargo.toml",
+    ".\\algorithm\\Cargo.toml"
+  ],
+  "rust-analyzer.showUnlinkedFileNotification": false
 }
