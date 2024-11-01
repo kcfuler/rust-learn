@@ -8,24 +8,16 @@
     <cargoProject FILE="$PROJECT_DIR$/chen_tian_rust_first_class/base/scrape_url/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/chen_tian_rust_first_class/base/httpie/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/chen_tian_rust_first_class/base/test-alloc/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/Rust-book/hello-world/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/gussing_game/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8fc670c-d093-480b-8243-1710186f5a53" name="Changes" comment="Changes">
+    <list default="true" id="f8fc670c-d093-480b-8243-1710186f5a53" name="Changes" comment="feat: update">
+      <change afterPath="$PROJECT_DIR$/gussing_game/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gussing_game/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gussing_game/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rust-learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rust-learn.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/Cargo.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/Cargo.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/src/graph/BFS/迷宫中离入口最近的出口.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/src/graph/graph.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/src/graph/tarjan.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/src/graph/tarjan.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/src/graph/tarjan.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/src/main.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chen_tian_rust_first_class/base/httpie/Cargo.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chen_tian_rust_first_class/base/httpie/Cargo.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chen_tian_rust_first_class/base/httpie/examples/cli.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chen_tian_rust_first_class/base/httpie/examples/cli_get.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chen_tian_rust_first_class/base/httpie/examples/cli_verify.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chen_tian_rust_first_class/base/httpie/src/main.rs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +39,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "kcfuler"
+  }
+}]]></component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/kcfuler/rust-learn.git",
+    "accountId": "968ee622-6658-4ada-a8f5-ac5e53d279ab"
+  }
+}]]></component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="yg4uh34r" />
   </component>
@@ -71,6 +75,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Cargo.Run gussing_game.executor": "Run",
     "Cargo.Run learn-concurrent.executor": "Run",
     "Cargo.Run minigrep.executor": "Run",
     "Cargo.Run scrape_url.executor": "Run",
@@ -88,6 +93,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.hideNoCargoProjectNotificationsD:/Code/github_client/rust-learn/Rust-book/add/adder/src/main.rs": "true",
+    "org.rust.hideNoCargoProjectNotificationsD:/Code/github_client/rust-learn/Rust-book/learn-oo/src/post.rs": "true",
     "org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/algorithm-practice/最长前缀.rs": "true",
     "org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/chen_tian_rust_first_class/cocurrent/atomatic.rs": "true",
     "org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/hello-world/Cargo.toml": "true",
@@ -103,7 +110,24 @@
   <component name="RsExternalLinterProjectSettings">
     <option name="runOnTheFly" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Cargo.Run gussing_game">
+    <configuration name="Run gussing_game" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package gussing_game --bin gussing_game" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/gussing_game" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Run test-alloc" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="run --package test-alloc --bin test-alloc" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$/chen_tian_rust_first_class/base/test-alloc" />
@@ -123,6 +147,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Run gussing_game" />
         <item itemvalue="Cargo.Run test-alloc" />
       </list>
     </recent_temporary>
@@ -185,6 +210,7 @@
       <workItem from="1702026665089" duration="1584000" />
       <workItem from="1702100080890" duration="752000" />
       <workItem from="1730464149700" duration="943000" />
+      <workItem from="1730465134862" duration="4656000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <option name="closed" value="true" />
@@ -194,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702026693953</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: update">
+      <option name="closed" value="true" />
+      <created>1730465162752</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730465162752</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +237,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="feat: update" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
