@@ -11,17 +11,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8fc670c-d093-480b-8243-1710186f5a53" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/chen_tian_rust_first_class/base/test-alloc/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chen_tian_rust_first_class/base/test-alloc/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chen_tian_rust_first_class/base/test-alloc/src/main.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chen_tian_rust_first_class/cocurrent/atomatic.rs" beforeDir="false" afterPath="$PROJECT_DIR$/chen_tian_rust_first_class/cocurrent/atomatic.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Cargo.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Cargo.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/graph/BFS/迷宫中离入口最近的出口.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/graph/graph.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/graph/tarjan.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/graph/tarjan.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/graph/tarjan.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chen_tian_rust_first_class/base/httpie/Cargo.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chen_tian_rust_first_class/base/httpie/Cargo.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chen_tian_rust_first_class/base/httpie/examples/cli.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chen_tian_rust_first_class/base/httpie/examples/cli_get.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chen_tian_rust_first_class/base/httpie/examples/cli_verify.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chen_tian_rust_first_class/base/httpie/src/main.rs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:dev" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -29,6 +40,9 @@
         <option value="Rust File" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,8 +79,9 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/repository/不洗碗/teaching-congress-web",
+    "last_opened_file_path": "D:/Code/github_client/rust-learn",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,7 +91,7 @@
     "org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/algorithm-practice/最长前缀.rs": "true",
     "org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/chen_tian_rust_first_class/cocurrent/atomatic.rs": "true",
     "org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/hello-world/Cargo.toml": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "language.rust.cargo.check",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -85,10 +100,14 @@
       <recent name="E:\repository\learn\rust-learn\Rust-book" />
     </key>
   </component>
+  <component name="RsExternalLinterProjectSettings">
+    <option name="runOnTheFly" value="true" />
+  </component>
   <component name="RunManager">
     <configuration name="Run test-alloc" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="run --package test-alloc --bin test-alloc" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$/chen_tian_rust_first_class/base/test-alloc" />
+      <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
@@ -96,7 +115,6 @@
       <option name="withSudo" value="false" />
       <option name="buildTarget" value="REMOTE" />
       <option name="backtrace" value="SHORT" />
-      <envs />
       <option name="isRedirectInput" value="false" />
       <option name="redirectInputPath" value="" />
       <method v="2">
@@ -166,6 +184,7 @@
       <workItem from="1702026604584" duration="48000" />
       <workItem from="1702026665089" duration="1584000" />
       <workItem from="1702100080890" duration="752000" />
+      <workItem from="1730464149700" duration="943000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <option name="closed" value="true" />
