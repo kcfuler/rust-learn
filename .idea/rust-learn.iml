@@ -4,8 +4,10 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Rust-book/hello-world/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/gussing_game/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/base-type/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Rust-book/hello-world/target" />
       <excludeFolder url="file://$MODULE_DIR$/gussing_game/target" />
+      <excludeFolder url="file://$MODULE_DIR$/base-type/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
