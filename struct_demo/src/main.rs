@@ -20,9 +20,9 @@ struct Square {
     height: u32,
 }
 
-impl squre {
-    fn from(width: u32, height: u32) -> squre {
-        squre { width, height }
+impl Square {
+    fn from(width: u32, height: u32) -> Square {
+        Square { width, height }
     }
 }
 
