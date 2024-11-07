@@ -10,11 +10,20 @@
     <cargoProject FILE="$PROJECT_DIR$/ownership/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/rnb/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/struct_demo/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/enum-demo/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/mod_demo/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8fc670c-d093-480b-8243-1710186f5a53" name="Changes" comment="feat: ownership">
+    <list default="true" id="f8fc670c-d093-480b-8243-1710186f5a53" name="Changes" comment="feat: start enum">
+      <change afterPath="$PROJECT_DIR$/enum-demo/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mod_demo/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mod_demo/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mod_demo/src/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mod_demo/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mod_demo/src/mod1.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/rust-learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rust-learn.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enum-demo/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/enum-demo/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +82,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Cargo.Run base-type.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run enum-demo.executor&quot;: &quot;Run&quot;,
     &quot;Cargo.Run gussing_game.executor&quot;: &quot;Debug&quot;,
     &quot;Cargo.Run learn-concurrent.executor&quot;: &quot;Run&quot;,
     &quot;Cargo.Run minigrep.executor&quot;: &quot;Run&quot;,
@@ -110,10 +120,27 @@
   <component name="RsExternalLinterProjectSettings">
     <option name="runOnTheFly" value="true" />
   </component>
-  <component name="RunManager" selected="Cargo.Run struct_demo">
+  <component name="RunManager" selected="Cargo.Run enum-demo">
     <configuration name="Run base-type" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="run --package base-type --bin base-type" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$/base-type" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run enum-demo" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package enum-demo --bin enum-demo" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/enum-demo" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -179,30 +206,13 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run test-alloc" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package test-alloc --bin test-alloc" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/chen_tian_rust_first_class/base/test-alloc" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Run enum-demo" />
         <item itemvalue="Cargo.Run struct_demo" />
         <item itemvalue="Cargo.Run rnb" />
         <item itemvalue="Cargo.Run base-type" />
         <item itemvalue="Cargo.Run gussing_game" />
-        <item itemvalue="Cargo.Run test-alloc" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +281,8 @@
       <workItem from="1730784051762" duration="1323000" />
       <workItem from="1730794370656" duration="4082000" />
       <workItem from="1730823235582" duration="1446000" />
-      <workItem from="1730884461892" duration="2786000" />
+      <workItem from="1730884461892" duration="5496000" />
+      <workItem from="1730965322067" duration="1974000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <option name="closed" value="true" />
@@ -321,7 +332,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730799236512</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: start enum">
+      <option name="closed" value="true" />
+      <created>1730959889068</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730959889068</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: start enum">
+      <option name="closed" value="true" />
+      <created>1730959906116</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730959906116</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +361,8 @@
     <MESSAGE value="feat: guess_game" />
     <MESSAGE value="feat: base_type &amp; control flow" />
     <MESSAGE value="feat: ownership" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: ownership" />
+    <MESSAGE value="feat: start enum" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: start enum" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
