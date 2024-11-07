@@ -7,11 +7,13 @@
       <sourceFolder url="file://$MODULE_DIR$/base-type/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ownership/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/rnb/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/struct_demo/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Rust-book/hello-world/target" />
       <excludeFolder url="file://$MODULE_DIR$/gussing_game/target" />
       <excludeFolder url="file://$MODULE_DIR$/base-type/target" />
       <excludeFolder url="file://$MODULE_DIR$/ownership/target" />
       <excludeFolder url="file://$MODULE_DIR$/rnb/target" />
+      <excludeFolder url="file://$MODULE_DIR$/struct_demo/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
