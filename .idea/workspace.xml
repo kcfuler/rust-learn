@@ -12,18 +12,19 @@
     <cargoProject FILE="$PROJECT_DIR$/struct_demo/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/enum-demo/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/mod_demo/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/std_lib/vec/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/std_lib/str/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8fc670c-d093-480b-8243-1710186f5a53" name="Changes" comment="feat: start enum">
-      <change afterPath="$PROJECT_DIR$/enum-demo/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod_demo/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod_demo/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod_demo/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod_demo/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod_demo/src/mod1.rs" afterDir="false" />
+    <list default="true" id="f8fc670c-d093-480b-8243-1710186f5a53" name="Changes" comment="feat: mod">
+      <change afterPath="$PROJECT_DIR$/std_lib/str/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/std_lib/str/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/std_lib/str/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/std_lib/vec/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/std_lib/vec/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/std_lib/vec/src/main.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/rust-learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rust-learn.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enum-demo/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/enum-demo/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +67,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -77,41 +81,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Cargo.Run base-type.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run enum-demo.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run gussing_game.executor&quot;: &quot;Debug&quot;,
-    &quot;Cargo.Run learn-concurrent.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run minigrep.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run rnb.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run scrape_url.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run server-demo.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run struct_demo.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run test-alloc.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Code/github_client/core&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;org.rust.hideNoCargoProjectNotificationsD:/Code/github_client/rust-learn/Rust-book/add/adder/src/main.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.hideNoCargoProjectNotificationsD:/Code/github_client/rust-learn/Rust-book/learn-oo/src/post.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/algorithm-practice/最长前缀.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/chen_tian_rust_first_class/cocurrent/atomatic.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/hello-world/Cargo.toml&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Cargo.Run base-type.executor": "Run",
+    "Cargo.Run enum-demo.executor": "Run",
+    "Cargo.Run gussing_game.executor": "Debug",
+    "Cargo.Run learn-concurrent.executor": "Run",
+    "Cargo.Run minigrep.executor": "Run",
+    "Cargo.Run rnb.executor": "Run",
+    "Cargo.Run scrape_url.executor": "Run",
+    "Cargo.Run server-demo.executor": "Run",
+    "Cargo.Run struct_demo.executor": "Run",
+    "Cargo.Run test-alloc.executor": "Run",
+    "Cargo.Run vec.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Code/github_client/core",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.hideNoCargoProjectNotificationsD:/Code/github_client/rust-learn/Rust-book/add/adder/src/main.rs": "true",
+    "org.rust.hideNoCargoProjectNotificationsD:/Code/github_client/rust-learn/Rust-book/learn-oo/src/post.rs": "true",
+    "org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/algorithm-practice/最长前缀.rs": "true",
+    "org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/chen_tian_rust_first_class/cocurrent/atomatic.rs": "true",
+    "org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/hello-world/Cargo.toml": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\repository\learn\rust-learn\Rust-book" />
@@ -120,7 +125,7 @@
   <component name="RsExternalLinterProjectSettings">
     <option name="runOnTheFly" value="true" />
   </component>
-  <component name="RunManager" selected="Cargo.Run enum-demo">
+  <component name="RunManager" selected="Cargo.Run vec">
     <configuration name="Run base-type" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="run --package base-type --bin base-type" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$/base-type" />
@@ -141,23 +146,6 @@
     <configuration name="Run enum-demo" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="run --package enum-demo --bin enum-demo" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$/enum-demo" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Run gussing_game" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package gussing_game --bin gussing_game" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/gussing_game" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -206,13 +194,30 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Run vec" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package vec --bin vec" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/std_lib/vec" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Run vec" />
         <item itemvalue="Cargo.Run enum-demo" />
         <item itemvalue="Cargo.Run struct_demo" />
         <item itemvalue="Cargo.Run rnb" />
         <item itemvalue="Cargo.Run base-type" />
-        <item itemvalue="Cargo.Run gussing_game" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +287,7 @@
       <workItem from="1730794370656" duration="4082000" />
       <workItem from="1730823235582" duration="1446000" />
       <workItem from="1730884461892" duration="5496000" />
-      <workItem from="1730965322067" duration="1974000" />
+      <workItem from="1730965322067" duration="5204000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <option name="closed" value="true" />
@@ -348,7 +353,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730959906116</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: mod">
+      <option name="closed" value="true" />
+      <created>1730968836574</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730968836574</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +375,8 @@
     <MESSAGE value="feat: base_type &amp; control flow" />
     <MESSAGE value="feat: ownership" />
     <MESSAGE value="feat: start enum" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: start enum" />
+    <MESSAGE value="feat: mod" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: mod" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

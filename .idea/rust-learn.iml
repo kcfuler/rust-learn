@@ -10,6 +10,8 @@
       <sourceFolder url="file://$MODULE_DIR$/struct_demo/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/enum-demo/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/mod_demo/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/std_lib/str/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/std_lib/vec/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Rust-book/hello-world/target" />
       <excludeFolder url="file://$MODULE_DIR$/gussing_game/target" />
       <excludeFolder url="file://$MODULE_DIR$/base-type/target" />
@@ -18,6 +20,8 @@
       <excludeFolder url="file://$MODULE_DIR$/struct_demo/target" />
       <excludeFolder url="file://$MODULE_DIR$/enum-demo/target" />
       <excludeFolder url="file://$MODULE_DIR$/mod_demo/target" />
+      <excludeFolder url="file://$MODULE_DIR$/std_lib/str/target" />
+      <excludeFolder url="file://$MODULE_DIR$/std_lib/vec/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
