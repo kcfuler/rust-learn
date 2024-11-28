@@ -16,15 +16,12 @@
     <cargoProject FILE="$PROJECT_DIR$/std_lib/str/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8fc670c-d093-480b-8243-1710186f5a53" name="Changes" comment="feat: mod">
-      <change afterPath="$PROJECT_DIR$/std_lib/str/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/std_lib/str/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/std_lib/str/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/std_lib/vec/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/std_lib/vec/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/std_lib/vec/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rust-learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rust-learn.iml" afterDir="false" />
+    <list default="true" id="f8fc670c-d093-480b-8243-1710186f5a53" name="Changes" comment="feat: std">
+      <change afterPath="$PROJECT_DIR$/mod_demo/src/mod2/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mod_demo/src/mod2/sub_mod1.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod_demo/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/mod_demo/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod_demo/src/mod1.rs" beforeDir="false" afterPath="$PROJECT_DIR$/mod_demo/src/mod1.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +87,7 @@
     "Cargo.Run gussing_game.executor": "Debug",
     "Cargo.Run learn-concurrent.executor": "Run",
     "Cargo.Run minigrep.executor": "Run",
+    "Cargo.Run mod_demo.executor": "Run",
     "Cargo.Run rnb.executor": "Run",
     "Cargo.Run scrape_url.executor": "Run",
     "Cargo.Run server-demo.executor": "Run",
@@ -99,6 +97,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/Code/github_client/core",
@@ -108,6 +107,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.disableDetachedFileInspectionD:/Code/github_client/rust-learn/mod_demo/src/mod2/mod.rs": "true",
+    "org.rust.disableDetachedFileInspectionD:/Code/github_client/rust-learn/mod_demo/src/mod2/sub_mod1.rs": "true",
     "org.rust.hideNoCargoProjectNotificationsD:/Code/github_client/rust-learn/Rust-book/add/adder/src/main.rs": "true",
     "org.rust.hideNoCargoProjectNotificationsD:/Code/github_client/rust-learn/Rust-book/learn-oo/src/post.rs": "true",
     "org.rust.hideNoCargoProjectNotificationsE:/repository/learn/rust-learn/algorithm-practice/最长前缀.rs": "true",
@@ -125,10 +126,10 @@
   <component name="RsExternalLinterProjectSettings">
     <option name="runOnTheFly" value="true" />
   </component>
-  <component name="RunManager" selected="Cargo.Run vec">
-    <configuration name="Run base-type" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package base-type --bin base-type" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/base-type" />
+  <component name="RunManager" selected="Cargo.Run mod_demo">
+    <configuration name="Run enum-demo" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package enum-demo --bin enum-demo" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/enum-demo" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -143,9 +144,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run enum-demo" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package enum-demo --bin enum-demo" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/enum-demo" />
+    <configuration name="Run mod_demo" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package mod_demo --bin mod_demo" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/mod_demo" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -213,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Run mod_demo" />
         <item itemvalue="Cargo.Run vec" />
         <item itemvalue="Cargo.Run enum-demo" />
         <item itemvalue="Cargo.Run struct_demo" />
         <item itemvalue="Cargo.Run rnb" />
-        <item itemvalue="Cargo.Run base-type" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +288,12 @@
       <workItem from="1730794370656" duration="4082000" />
       <workItem from="1730823235582" duration="1446000" />
       <workItem from="1730884461892" duration="5496000" />
-      <workItem from="1730965322067" duration="5204000" />
+      <workItem from="1730965322067" duration="7000000" />
+      <workItem from="1731392125393" duration="773000" />
+      <workItem from="1731395360158" duration="103000" />
+      <workItem from="1731849848200" duration="4000" />
+      <workItem from="1732779227525" duration="339000" />
+      <workItem from="1732779622259" duration="1616000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <option name="closed" value="true" />
@@ -361,7 +367,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730968836574</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: std">
+      <option name="closed" value="true" />
+      <created>1730982018510</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730982018511</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +390,8 @@
     <MESSAGE value="feat: ownership" />
     <MESSAGE value="feat: start enum" />
     <MESSAGE value="feat: mod" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: mod" />
+    <MESSAGE value="feat: std" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: std" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
